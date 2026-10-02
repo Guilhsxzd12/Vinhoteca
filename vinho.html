@@ -3,7 +3,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css"><title>Videira Vinhoteca</title><meta name="description" content="Catálogo de vinhos, uvas, regiões e vinícolas."></head><body><header class="site-header">
+<link rel="stylesheet" href="/styles.css"><title>Vinho | Videira</title></head><body><header class="site-header">
   <div class="shell header-bar">
     <a class="brand" href="/" aria-label="Videira"><img src="/assets/videira-logo.svg" alt="Videira"></a>
     <nav class="main-nav" aria-label="Principal">
@@ -63,79 +63,12 @@
     <a class="header-cta" href="/loja.html">Catálogo</a>
   </div>
 </header>
-<main>
-  <section class="hero" id="hero">
-    <div class="hero-media"></div>
-    <div class="hero-overlay"></div>
-    <div class="shell hero-inner">
-      <div class="hero-copy">
-        <span class="eyebrow" id="heroEyebrow">Curadoria Videira</span>
-        <h1 id="heroTitle">Vinhos que merecem ser descobertos.</h1>
-        <p id="heroBody">Explore rótulos por estilo, uva, região e produtor em uma experiência visual, simples e elegante.</p>
-        <div class="hero-actions">
-          <a class="btn btn-light" id="heroPrimary" href="/loja.html">Explorar catálogo</a>
-          <a class="btn btn-ghost" href="/uvas.html">Conhecer uvas</a>
-        </div>
-      </div>
-      <aside class="hero-highlight">
-        <span>Seleção da semana</span>
-        <strong>Mendoza em destaque</strong>
-        <p>Malbecs, brancos e novos produtores para conhecer.</p>
-        <a href="/loja.html?regiao=Mendoza">Ver seleção</a>
-      </aside>
-    </div>
-    <div class="hero-dots" id="heroDots"></div>
-  </section>
-
-  <section class="section shell">
-    <div class="section-heading">
-      <div><span class="section-label">Explore por estilo</span><h2>Comece pelo que você gosta</h2></div>
-      <a href="/loja.html" class="text-link">Ver catálogo</a>
-    </div>
-    <div class="type-grid" id="typeGrid"></div>
-  </section>
-
-  <section class="section shell">
-    <div class="section-heading">
-      <div><span class="section-label">Seleção Videira</span><h2>Descobertas da semana</h2><p>Uma curadoria para sair do óbvio.</p></div>
-      <a href="/loja.html" class="text-link">Ver tudo</a>
-    </div>
-    <div class="carousel-shell">
-      <button class="carousel-arrow prev" aria-label="Anterior">‹</button>
-      <div class="product-rail" id="featuredRail"></div>
-      <button class="carousel-arrow next" aria-label="Próximo">›</button>
-    </div>
-  </section>
-
-  <section class="section shell editorial-grid">
-    <a class="editorial-card editorial-region" href="/regioes.html">
-      <div><span>Regiões</span><h3>Viaje pelos grandes terroirs</h3><p>Conheça origens, altitudes e estilos que mudam o vinho na taça.</p><b>Explorar regiões</b></div>
-    </a>
-    <a class="editorial-card editorial-grape" href="/uvas.html">
-      <div><span>Uvas</span><h3>Descubra o perfil de cada variedade</h3><p>Do Malbec ao Chenin, encontre aromas e estilos que combinam com você.</p><b>Explorar uvas</b></div>
-    </a>
-  </section>
-
-  <section class="section section-tinted">
-    <div class="shell">
-      <div class="section-heading">
-        <div><span class="section-label">Uvas</span><h2>Encontre o seu perfil</h2><p>Todas as uvas do catálogo, em uma coleção deslizante.</p></div>
-        <a href="/uvas.html" class="text-link">Ver todas</a>
-      </div>
-      <div class="carousel-shell">
-        <button class="carousel-arrow prev" aria-label="Anterior">‹</button>
-        <div class="grape-rail" id="grapeRail"></div>
-        <button class="carousel-arrow next" aria-label="Próximo">›</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="section shell">
-    <div class="section-heading">
-      <div><span class="section-label">Produtores</span><h2>Vinícolas para conhecer</h2><p>Histórias, lugares e estilos por trás de cada rótulo.</p></div>
-      <a href="/vinicolas.html" class="text-link">Ver todas</a>
-    </div>
-    <div class="winery-grid" id="homeWineries"></div>
+<main class="product-page shell">
+  <nav class="breadcrumbs"><a href="/">Início</a><span>›</span><a href="/loja.html">Vinhos</a><span>›</span><span id="crumbWine">Vinho</span></nav>
+  <div id="product"></div>
+  <section class="section">
+    <div class="section-heading"><div><span class="section-label">Conheça</span><h2>Vinhos da mesma vinícola</h2></div></div>
+    <div class="carousel-shell"><button class="carousel-arrow prev">‹</button><div class="product-rail" id="same"></div><button class="carousel-arrow next">›</button></div>
   </section>
 </main>
 <footer class="site-footer">
